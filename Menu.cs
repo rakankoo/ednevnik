@@ -36,5 +36,35 @@ namespace ednevnik
         {
             label1.Text = Program.user_ime + " " + Program.user_prezime;
         }
+
+        private void smeroviToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sifarnik sif = new Sifarnik("smer");
+            sif.Show();
+        }
+
+        private void skolskeGodineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sifarnik sif = new Sifarnik("skolska_godina");
+            sif.Show();
+        }
+
+        private void predmetiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sifarnik sif = new Sifarnik("predmet");
+            sif.Show();
+        }
+
+        private void osobeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Sifarnik sif = new Sifarnik("osoba");
+            sif.Show();
+        }
+
+        private void raspodelaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Raspodela ras = new Raspodela();
+            ras.Show();
+        }
     }
 }
