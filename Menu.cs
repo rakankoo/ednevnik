@@ -72,5 +72,11 @@ namespace ednevnik
             Upisnica upis = new Upisnica();
             upis.Show();
         }
+
+        private void oceneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ocena oc = new Ocena();
+            oc.Show();
+        }
     }
 }
