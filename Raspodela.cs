@@ -206,8 +206,9 @@ namespace ednevnik
                 int godina = (int)cmb_godina.SelectedValue;
                 int predmet = (int)cmb_predmet.SelectedValue;
                 int odeljenje = (int)cmb_odeljenje.SelectedValue;
+                int id = Convert.ToInt32(textBox1.Text);
                 string naredba = $"update raspodela set nastavnik_id={nastavnik}, predmet_id={predmet}, " +
-                    $"godina_id={godina}, odeljenje_id={odeljenje}";
+                    $"godina_id={godina}, odeljenje_id={odeljenje} where id={id}";
                 SqlConnection veza = Konekcija.connect();
                 SqlCommand komanda = new SqlCommand(naredba, veza);
                 veza.Open();

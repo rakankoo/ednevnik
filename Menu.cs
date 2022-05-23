@@ -66,5 +66,11 @@ namespace ednevnik
             Raspodela ras = new Raspodela();
             ras.Show();
         }
+
+        private void upisnicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Upisnica upis = new Upisnica();
+            upis.Show();
+        }
     }
 }

@@ -32,13 +32,14 @@ namespace ednevnik
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.osobaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osobeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smeroviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skolskeGodineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.predmetiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osobeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.raspodelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.upisnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@ namespace ednevnik
             // osobaToolStripMenuItem
             // 
             this.osobaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.osobeToolStripMenuItem});
+            this.osobeToolStripMenuItem,
+            this.upisnicaToolStripMenuItem});
             this.osobaToolStripMenuItem.Name = "osobaToolStripMenuItem";
             this.osobaToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.osobaToolStripMenuItem.Text = "Liste";
@@ -68,14 +70,6 @@ namespace ednevnik
             this.osobeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.osobeToolStripMenuItem.Text = "Osobe";
             this.osobeToolStripMenuItem.Click += new System.EventHandler(this.osobeToolStripMenuItem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(638, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
-            this.label1.TabIndex = 1;
             // 
             // tabeleToolStripMenuItem
             // 
@@ -124,6 +118,21 @@ namespace ednevnik
             this.raspodelaToolStripMenuItem.Text = "Raspodela";
             this.raspodelaToolStripMenuItem.Click += new System.EventHandler(this.raspodelaToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(638, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 1;
+            // 
+            // upisnicaToolStripMenuItem
+            // 
+            this.upisnicaToolStripMenuItem.Name = "upisnicaToolStripMenuItem";
+            this.upisnicaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.upisnicaToolStripMenuItem.Text = "Upisnica";
+            this.upisnicaToolStripMenuItem.Click += new System.EventHandler(this.upisnicaToolStripMenuItem_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,5 +164,6 @@ namespace ednevnik
         private System.Windows.Forms.ToolStripMenuItem predmetiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem osobeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem raspodelaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem upisnicaToolStripMenuItem;
     }
 }
